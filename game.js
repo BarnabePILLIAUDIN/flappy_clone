@@ -2,7 +2,7 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, "game");
 
 var mainState = {
 	preload: function () {
-		game.stage.backgroundColor = "#71c5cf";
+		game.stage.backgroundColor = "#D0FFC2";
 		bird =
 			"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEXSvicAAABogyUZAAAAGUlEQVR4AWP4DwYHMOgHDEDASCN6lMYV7gChf3AJ/eB/pQAAAABJRU5ErkJggg==";
 		pipe =
@@ -61,7 +61,7 @@ var mainState = {
 		this.bird.body.velocity.y = -350;
 
 		// Jump animation
-		game.add.tween(this.bird).to({ angle: -20 }, 100).start()
+		game.add.tween(this.bird).to({ angle: -20 }, 100).start();
 	},
 
 	hitPipe: function () {
